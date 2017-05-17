@@ -1,0 +1,38 @@
+1 安装node.js
+2 安装 webpack-----npm install webpack -g //全局安装webpack
+		npm install webpack --save-dev//本项目中安装Webpack作为依赖包
+查看  webpack -v
+
+3.创建项目
+npm install -g vue-cli  ==>快速生成项目模版的工具
+vue init webpack my-project ==>基于webpack的项目
+cd my-project
+npm install 安装我需要的依赖
+4 运行 npm run dev
+	
+
+
+
+
+使用Vue.js+es6+webpack等前端最新最热的技术，采用组件化、模块化的开发方式，让你用更少的代码做更快速的开发
+
+下载一个例子时，首先 解压，然后npm install ,最后 npm run dev 运行
+
+
+文件抽离，一个.vue 中只有html，其样式和js单独文件抽出来
+
+例如：
+	sample.js文件
+		export default {
+  			data() {},
+  			methods: {}
+		}
+	sample.vue 文件
+		import sample from './sample'
+		<script>
+    			export default {
+        		...sample
+    			}
+		</script>
+
+	
